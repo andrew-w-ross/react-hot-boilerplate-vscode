@@ -1,14 +1,14 @@
-react-hot-boilerplate
-=====================
+react-hot-boilerplate-vscode
+============================
 
-The minimal dev environment to enable live-editing React components.
+The minimal dev environment to enable live-editing React components in Visual Studio Code.
 
 ### Usage
 
 ```
 npm install
-npm start
-open http://localhost:3000
+press F5 in vscode to start debugging
+press CTRL+SHIFT+B to create a release build
 ```
 
 Now edit `src/App.js`.  
@@ -40,7 +40,7 @@ This boilerplate is purposefully simple to show the minimal configuration for Re
 
 ### Resources
 
-* [Demo video](http://vimeo.com/100010922)
+* [react-hot-boilerplate on Github](https://github.com/gaearon/react-hot-boilerplate)
 * [react-hot-loader on Github](https://github.com/gaearon/react-hot-loader)
 * [Integrating JSX live reload into your workflow](http://gaearon.github.io/react-hot-loader/getstarted/)
 * [Troubleshooting guide](https://github.com/gaearon/react-hot-loader/blob/master/docs/Troubleshooting.md)

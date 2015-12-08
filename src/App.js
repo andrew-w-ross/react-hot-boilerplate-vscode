@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 
 export default class App extends Component {
+  
+  clickHandler(event) {
+    debugger;
+  }
+  
   render() {
     return (
-      <h1>Hello, world.</h1>
+      <button onClick={this.clickHandler}>Debug</button>
     );
   }
 }
