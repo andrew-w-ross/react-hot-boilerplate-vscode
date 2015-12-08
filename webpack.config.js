@@ -3,14 +3,15 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  devtool: 'eval-source-map',
+  devtool: 'inline-source-map',
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
     './src/index.js'
   ],
-  debug: true,
   output: {
+    devtoolModuleFilenameTemplate: 'file:///[absolute-resource-path]',
+    devtoolFallbackModuleFilenameTemplate: 'file:///[absolute-resource-path]?[hash]',
     path: __dirname,
     filename: 'bundle.js',
     publicPath: 'http://localhost:3000/'
