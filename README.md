@@ -28,6 +28,8 @@ npm run lint
 * [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 * [babel-loader](https://github.com/babel/babel-loader)
 * [react-hot-loader](https://github.com/gaearon/react-hot-loader)
+* [vscode](https://github.com/Microsoft/vscode)
+* [vscode-chrome-debug](https://github.com/Microsoft/vscode-chrome-debug)
 
 ### Production Release
 
