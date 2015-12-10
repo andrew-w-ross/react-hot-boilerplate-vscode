@@ -10,8 +10,20 @@ module.exports = {
     './src/index.js'
   ],
   output: {
-    devtoolModuleFilenameTemplate: 'file:///[absolute-resource-path]',
-    devtoolFallbackModuleFilenameTemplate: 'file:///[absolute-resource-path]?[hash]',
+    devtoolModuleFilenameTemplate: function(info){
+      if(info.absoluteResourcePath.charAt(0) === '/') {
+        return "file://"+info.absoluteResourcePath;
+      } else {
+        return "file:///"+info.absoluteResourcePath;
+      }      
+    },
+    devtoolFallbackModuleFilenameTemplate: function(info){
+      if(info.absoluteResourcePath.charAt(0) === '/') {
+        return "file://"+info.absoluteResourcePath+'?'+info.hash;
+      } else {
+        return "file:///"+info.absoluteResourcePath+'?'+info.hash;
+      }      
+    },
     path: __dirname,
     filename: 'bundle.js',
     publicPath: 'http://localhost:3000/'
