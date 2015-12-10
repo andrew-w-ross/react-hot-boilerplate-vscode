@@ -7,8 +7,7 @@
                 "request": "launch",
                 "url": "http://localhost:3000/index.html",
                 "preLaunchTask": "webpack dev",   
-                "sourceMaps": true,
-				"userDataDir":".vscode/tmp"
+                "sourceMaps": true
             }
 	]
 }
